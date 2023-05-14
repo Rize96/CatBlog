@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" src="theme.js">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
+</head>
+<body>
+    <div class="modal">
+        <div class="modal-box">
+            <div class="wrap-title">
+                <h2 class="modal-title">
+                    Задонатить<br>500₽ Марсику
+                </h2>
+                <span class="btn-close" id="close-modal">
+                    +
+                </span>
+            </div>
+            <p class="modal-text">
+                нажав на кнопку вы перейдете на страницу со сбором, где сможете произвести оплату
+            </p>
+            <a class="button modal-btn" href="https://www.tinkoff.ru/cf/579CXwqaHqt">
+                <img src="https://drive.google.com/uc?export=view&id=1lCLEeC0hvE6dysAiMGWLuah8vZway-ht" width="180" height="50">
+            </a>
+        </div>
+    </div>
+    <header class="nav">
+        <a href="index.html" class="back">
+            <i class="bi bi-arrow-left" id="arrow"></i>
+        </a>
+        <button class="toggle-area">
+            <span class="toggle-sun" id="toggle-id">
+                <i class="bi bi-moon" id="icon"></i>
+            </span>
+        </button>
+    </header>
+    <container class="body-wrap container-stick">
+        <h1 class="offer">
+            Привет! <br>
+            Я кот Марсик
+        </h1>
+        <p class="offer-text">
+            здесь я публикую свои истории о каждом прожитом дне на КПП со своими сменщиками
+        </p>
+        <section class="main">
+            <div class="img-offer one">
+                <img src="">
+            </div>
+            <div class="main-wrap">
+                <a href="blog_main.html" class="button">
+                    блог
+                </a>
+            </div>
+        </section>
+        <section class="donate">
+            <div class="img-offer two">
+                <img src="">
+            </div>
+        </div>
+        <div class="main-wrap">
+            <div class="wrap-tab">
+                <button class="tab active-button" id="one-tab">
+                    почешут ушко
+                </button>
+                <button class="tab" id="two-tab">
+                    дадут вкусняшку
+                </button>
+                <button class="tab" id="three-tab">
+                    купят корм
+                </button>
+                <div class="tab-hover">
+                </div>
+            </div>
+            <div class="content-wrap">
+                <div class="content active-display" id="one-price">
+                    50₽
+                </div>
+                <div class="content" id="two-price">
+                    200₽
+                </div>
+                <div class="content" id="three-price">
+                    500₽
+                </div>
+            </div>
+            <h2 class="donate-title">
+            </h2>
+
+            <a class="button" href="#" id="open-modal">
+                задонатить
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="subscribe">
+    <div class="img-offer three">
+        <img src="">
+    </div>
+    <div class="main-wrap">
+        <h2 class="title-subscribe">
+            Подпишись на мой канал, чтобы не пропустить свежие выпуски
+        </h2>
+        <a href="#" class="button">
+            подписаться
+        </a>
+    </div>
+</section>
+</container>
+<div class="timer-wrap content-wrap">
+    <h1>
+        Осталось до дома
+    </h1>
+    <section class="countdown-wrapper content-wrap">
+        <div class="countdown" id="countdown">
+            <div class="ring-wrap">
+                <div class="time-wrap">
+                    <div class="time">
+                        <h2 class="timer active-time" id="days">
+
+                        </h2>
+                    </div>
+                    <div class="time">
+                        <h2 class="timer" id="minutes">
+
+                        </h2>
+                    </div>
+                    <div class="time">
+                        <h2 class="timer" id="seconds">
+
+                        </h2>
+                    </div>
+                    <span class="persent" id="persent">
+
+                    </span>
+                </div>
+                <svg class="progess-ring" width="200" height="200">
+                    <circle class="progress-ring_circletwo" stroke="lightgrey" stroke-width="4"
+                        cy="100" cx="100" r="90" fill="transparent" />
+                    <circle class="progress-ring_circle" stroke="#1ab53c" stroke-width="4"
+                        cy="100" cx="100" r="90" fill="transparent" />
+                </svg>
+            </div>
+        </div>
+        <div class="wrap-tabs">
+            <button class="tabs active-button" id="one-tabs">
+                дней
+            </button>
+            <button class="tabs" id="two-tabs">
+                недель
+            </button>
+            <button class="tabs" id="three-tabs">
+                месяцев
+            </button>
+            <div class="tab-hovers">
+            </div>
+        </div>
+
+    </section>
+</div>
+<section class="release-wrap content-wrap">
+    <h1>
+        Свежие выпуски
+    </h1>
+    <p class="offer-text">
+    </p>
+</div>
+<a href="blog_1.html" class="link-blog">
+    <section class="blog-01" data-f="favorires">
+        <div class="blog-img one">
+            <img class="blog-01-img">
+        </div>
+        <div class="main-wrap">
+            <div class="text-blog-wrap">
+                <div class="text-blog">
+                    <span class="date">
+                        10.04.23
+                    </span>
+                    <h2 class="blog-01-title">
+                        Мартовский проказник
+                    </h2>
+                </div>
+                <div class="like-wrap">
+                    <span class="num-like">
+                        5
+                    </span>
+                    <span class="like">
+                        <i class="bi bi-heart" id="heart"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+</a>
+<a href="blog_4.html" class="link-blog">
+    <section class="blog-01 active">
+        <div class="blog-img four">
+            <img class="blog-01-img">
+        </div>
+        <div class="main-wrap">
+            <div class="text-blog-wrap">
+                <div class="text-blog">
+                    <span class="date">
+                        28.03.23
+                    </span>
+                    <h2 class="blog-01-title">
+                        Июньский проказник
+                    </h2>
+                </div>
+                <div class="like-wrap">
+                    <span class="num-like">
+                        8
+                    </span>
+                    <span class="like">
+                        <i class="bi bi-heart" id="heart"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+</a>
+<a href="blog_6.html" class="link-blog">
+    <section class="blog-01 active" data-f="favorites">
+        <div class="blog-img six">
+            <img class="blog-01-img">
+        </div>
+        <div class="main-wrap">
+            <div class="text-blog-wrap">
+                <div class="text-blog">
+                    <span class="date">
+                        16.03.23
+                    </span>
+                    <h2 class="blog-01-title">
+                        Августовский проказник
+                    </h2>
+                </div>
+                <div class="like-wrap">
+                    <span class="num-like">
+                        9
+                    </span>
+                    <span class="like">
+                        <i class="bi bi-heart" id="heart"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+</a>
+<div class="arrow-wrap">
+    <span class="left-arrow" id="prev">
+        <i class="bi bi-arrow-left" id="arrow-l"></i>
+    </span>
+    <span class="right-arrow" id="next">
+        <i class="bi bi-arrow-right" id="arrow-r"></i>
+    </span>
+</div>
+</section>
+<section class="quest-wrap">
+</section>
+<div class="footer content-wrap">
+<h1 class="footer-title">
+Вопросы котику
+</h1>
+<img class="yuriy">
+<h2 class="footer-text">
+Юра (Мой сменщик)
+</h2>
+<a href="https://t.me/webdesyuriy" class="button">
+@webdesyuriy
+</a>
+</div>
+<script src="theme.js">
+
+</script>
+<script>
+const next = document.querySelector('#next');
+const prev = document.querySelector('#prev');
+const slides = document.querySelectorAll('.blog-01');
+
+
+let index = 0;
+
+const activeSlide = (n) => {
+for (let slide of slides) {
+slide.classList.add('active');
+}
+slides[n].classList.remove('active');
+}
+
+const prepareCurrentSlides = (ind) => {
+activeSlide(ind);
+activeDots(ind);
+}
+
+const nextSlide = () => {
+if (index == slides.length - 1) {
+index = 0;
+prepareCurrentSlides(index)
+} else {
+index++;
+prepareCurrentSlides(index)
+}
+}
+//определяем активный слайд и переключаем его назад
+
+const prevSlide = () => {
+if (index == 0) {
+index = slides.length - 1;
+prepareCurrentSlides(index)
+} else {
+index--;
+prepareCurrentSlides(index)
+}
+}
+
+next.addEventListener('click', nextSlide);
+prev.addEventListener('click', prevSlide);
+</script>
+<script>
+const day = document.querySelector('#days');
+const minute = document.querySelector('#minutes');
+const second = document.querySelector('#seconds');
+const persent = document.querySelector('#persent');
+
+
+
+
+
+const nextYear = new Date(2023, 11, 06);
+
+
+const currentTime = new Date();
+const diff = nextYear - currentTime;
+
+const daysLeft = Math.floor(diff / 1000 / 60 / 60 / 24);
+
+const weekLeft = Math.floor(diff / 1000 / 60 / 60 / 24 / 7);
+
+const mesLeft = Math.floor(diff / 1000 / 60 / 60 / 24 / 7 / 4);
+
+const procLeft = (365 - daysLeft) / 365 * 100;
+
+const hoursLeft = Math.floor(diff / 1000 / 60 / 60);
+
+const minutesLeft = Math.floor(diff / 1000 / 60) % 60;
+
+const seconsLeft = Math.floor(diff / 1000) % 60;
+
+day.innerText = daysLeft;
+minute.innerText = weekLeft;
+second.innerText = mesLeft;
+persent.innerText = Math.round(procLeft) + `%`;
+
+
+const circle = document.querySelector('.progress-ring_circle');
+const radius = circle.r.baseVal.value;
+const circumference = 2 * Math.PI * radius;
+
+circle.style.strokeDasharray = `${circumference} ${circumference}`;
+circle.style.strokeDashoffset = circumference;
+
+function setProgress(percent) {
+const offset = circumference - percent / 100 * circumference;
+circle.style.strokeDashoffset = offset;
+}
+
+setProgress(Math.round(procLeft))
+
+</script>
+<script>
+let modal = document.querySelector('.open');
+let btnOpen = document.querySelector('#open-modal');
+let btnClose = document.querySelector('#close-modal');
+let overlay = document.querySelector('.modal');
+
+
+btnOpen.addEventListener('click', () => {
+
+overlay.classList.add('open')
+})
+
+const closeModal = () => {
+overlay.classList.remove('open')
+}
+
+overlay.addEventListener('click', closeModal)
+</script>
+</body>
+</html>

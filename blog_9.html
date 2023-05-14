@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" src="theme.js">
+
+</head>
+<body>
+    <header class="nav">
+            <a href="blog_main.html" class="back">
+                <i class="bi bi-arrow-left" id="arrow"></i>
+            </a>
+            <button class="toggle-area">
+                <span class="toggle-sun" id="toggle-id">
+                    <i class="bi bi-moon" id="icon"></i>
+                </span>
+            </button>
+        </header>
+    <container class="body-wrap">
+        <section class="blog-wrap content-wrap">
+            <h1 class="name-blog">
+                Ноябрьский проказник
+            </h1>
+            <div class="img-blog nine">
+            </div>
+            <div class="text-container">
+                <p class="text-area">
+                    Сегодня я гулял по улице, и повстречал наших псов. Валеру и Арнольда, они бегали за мной. Но я оказался шустрее и ловчее, залез на дерево и наблюдал за этими двумя беспомощными бедолагами
+                    Сегодня я гулял по улице, и повстречал наших псов. Валеру и Арнольда, они бегали за мной. Но я оказался шустрее и ловчее, залез на дерево и наблюдал за этими двумя беспомощными бедолагам
+                    Сегодня я гулял по улице, и повстречал наших псов. Валеру и Арнольда, они бегали за мной. Но я оказался шустрее и ловчее, залез на дерево и наблюдал за этими двумя беспомощными бедолагами
+                    и
+                </p>
+            </div>
+        </section>
+        <section class="like-area content-wrap">
+            <div class="wrap-like-big">
+                <span class="like-big">
+                    <i class="bi bi-heart-fill" id="heart-big"></i>
+                </span>
+                <span class="num-like-big">
+                    0
+                </span>
+            </div>
+            <p class="description-like">
+                за каждый лайк мне чешут за ушком
+            </p>
+        </section>
+        <section class="footer-blog content-wrap">
+            <a href="blog_main.html" class="button btn">
+                задонатить
+            </a>
+            <a href="blog_main.html" class="button next">
+                смотреть следующий выпуск
+            </a>
+            <a href="blog_main.html" class="button next">
+                смотреть предыдущий выпуск
+            </a>
+        </section>
+    </container>
+    <script src="theme.js">
+
+    </script>
+    <script>
+        const buttons = document.querySelectorAll('.like-big'); // Ищем все кнопки на странице
+
+
+        /// Функция, которую мы будем вызвать при клике. У нее есть параметр button. При вызове функцие мы перадаим кнопку
+        const btnHandler = (button) => {
+            const parentEl = button.closest('.wrap-like-big'); // ищет родителя с классом .button-wrapper
+            const likeCounter = parentEl.querySelector('.num-like-big') // ищет счетчик внутри родителя .button-wrapper
+
+            // Ниже или ставим лайк или убираем
+            if (button.classList.contains('heart-big-like-click')) {
+                likeCounter.textContent--
+                button.classList.remove('heart-big-like-click') //
+            } else {
+                likeCounter.textContent++
+                button.classList.add('heart-big-like-click') //
+            }}
+
+        buttons.forEach((button) => {
+            // Прохдимся по всем кнопкам, что бы повесить событие клик. "buttons" - массив конопко, "button" - это один элемент массива.
+            button.addEventListener('click', () => {
+                // аналог onclick, который использовать предпочтительней
+                btnHandler(button) // вызваем функцию, которую написали выше и передаем ей кнопку
+            })})
+    </script>
+</body>
+</html>
